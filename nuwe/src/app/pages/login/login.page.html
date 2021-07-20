@@ -1,4 +1,51 @@
-<ion-content>
-  <h1>Login Page</h1>
-  <!-- <ion-img src="../../../assets/Logo.svg" ><ion-img/> -->
+<ion-content class="ion-padding">
+  <div class="logo_principal">
+    <ion-img
+      src="../../../assets/Logo.svg"
+      class="logo_img_principal"
+    ></ion-img>
+    <p class="text_principal">
+      Empoyering tech amazing individuals to shine trough hackathons, talks &
+      challenges
+    </p>
+  </div>
+
+  <div class="formulario">
+    <form
+    #formulario="ngForm"
+    (ngSubmit)="onSubmit(formulario)"
+    class="ion-padding"
+  >
+    <ion-list-header>
+      <ion-label>Formulario Válido</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Email: </ion-label>
+      <ion-input
+        type="email"
+        placeholder="Email"
+        name="email"
+        [(ngModel)]="usuario.email"
+        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password: </ion-label>
+      <ion-input
+        type="password"
+        placeholder="Password"
+        name="password"
+        [(ngModel)]="usuario.password"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <ion-button type="submit">
+      Log in
+    </ion-button>
+  </form>
+  </div>
 </ion-content>

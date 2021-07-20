@@ -24,3 +24,25 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+*{
+    font-family: Montserrat;
+}
+
+.logo_principal {
+    margin-top: 50%;
+  }
+  
+  .logo_img_principal {
+    width: 75%;
+    display: block;
+    margin: auto;
+  }
+  
+  .logo_principal .text_principal {
+    width: 90%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+  }

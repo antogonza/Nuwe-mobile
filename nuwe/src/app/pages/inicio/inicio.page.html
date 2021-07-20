@@ -1,9 +1,25 @@
 <ion-content class="ion-padding">
-  <div class="logo">
-    <ion-img src="../../../assets/Logo.svg" class="logo_img"></ion-img>
-    <p class="text">
+  <div class="logo_principal">
+    <ion-img
+      src="../../../assets/Logo.svg"
+      class="logo_img_principal"
+    ></ion-img>
+    <p class="text_principal">
       Empoyering tech amazing individuals to shine trough hackathons, talks &
       challenges
     </p>
+  </div>
+  <div class="buttons">
+    <ion-button [routerLink]="['/login']" expand="block" class="login_button">
+      Iniciar Sesión
+    </ion-button>
+    <ion-button
+      [routerLink]="['/register']"
+      expand="block"
+      class="register_button"
+      fill="outline"
+    >
+      Crear Cuenta
+    </ion-button>
   </div>
 </ion-content>

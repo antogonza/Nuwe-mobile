@@ -1,18 +1,14 @@
-.logo {
-  margin-top: 50%;
+.buttons {
+  margin-top: 40%;
 }
 
-.logo_img {
-  width: 75%;
-  display: block;
-  margin: auto;
+.login_button {
+  border-radius: 5%;
+  color: #ffffff;
+  height: 44px;
 }
 
-.logo .text{
-    width: 75%;
-    display: block;
-    margin: auto;
-    font-family: 'Montserrat';
-    text-align: justify;
-    font-size: 14px;
+.register_button {
+  margin-top: 10%;
+  height: 44px;
 }
