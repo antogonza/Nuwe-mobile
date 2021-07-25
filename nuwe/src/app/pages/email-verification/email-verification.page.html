@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>emailVerification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <h2>Te has dado de alta con éxito!</h2>
+        <h4>
+          Tan solo queda un paso para poder acceder a nuestros servicios. Por
+          favor, revisa tu correo y verifica tu cuenta
+        </h4>
+        <p>¿No has recibido el correo de verificación?</p>
+        <ion-button (click)="sendEmail()" expand="block" class="login-btn">
+          Reenviar correo
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

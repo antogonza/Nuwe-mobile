@@ -4,13 +4,13 @@
   color: var(--ion-color-primary);
 }
 
-.login_btn{
-    margin-top: 10%;
-    color: #ffffff;
+.input {
+  border-radius: 5%;
+  // color: #ffffff;
+  background-color: var(--ion-background-color);
 }
 
-.input{
-    border-radius: 5%;
-    color: #ffffff;
-    background-color: var(--ion-background-color);
+.google {
+  --background: #db4437;
+  color: #fff;
 }

@@ -10,22 +10,17 @@
     </p>
   </div>
 
-  <form #form="ngForm" (ngSubmit)="login(form)" class="ion-margin">
+  <form #form="ngForm" (ngSubmit)="login(form.value)" class="ion-margin">
     <ion-grid>
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
           <div padding>
             <ion-item class="ion-margin input">
-              <ion-label position="floating">Username</ion-label>
-              <ion-input
-                name="username"
-                type="text"
-                ngModel
-                required
-              ></ion-input>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input name="email" type="email" ngModel required></ion-input>
             </ion-item>
             <ion-item class="ion-margin input">
-              <ion-label position="floating">Password</ion-label>
+              <ion-label position="floating">Contraseña</ion-label>
               <ion-input
                 name="password"
                 type="password"
@@ -50,4 +45,8 @@
       </ion-row>
     </ion-grid>
   </form>
+
+  <hr width="100%" color="#8B979D" class="divider" />
+  <p class="texto-registro">¿Aún no tienes cuenta?</p>
+  <p class="texto-registro" [routerLink]="['/register']">Regístrate aquí</p>
 </ion-content>

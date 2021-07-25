@@ -31,6 +31,17 @@ const routes: Routes = [
         (m) => m.ConfirmationCodePageModule
       ),
   },
+  {
+    path: 'dashboard',
+    loadChildren: () =>
+      import('./pages/dashboard/dashboard.module').then(
+        (m) => m.DashboardPageModule
+      ),
+  },
+  {
+    path: 'email-verification',
+    loadChildren: () => import('./pages/email-verification/email-verification.module').then( m => m.EmailVerificationPageModule)
+  },
 ];
 
 @NgModule({
