@@ -17,6 +17,8 @@ import {
 })
 export class RegisterPage implements OnInit {
   usuario = {
+    username: '',
+    nombreCompleto: '',
     email: '',
     password: '',
     password2: '',
